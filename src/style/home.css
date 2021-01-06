@@ -1,0 +1,295 @@
+* {
+    font-family: Mulish;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+.container-main{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.btn-signup{
+    background-color: #5F2EEA;
+    font-weight: 600;
+}
+
+.navbar-right{
+    margin-right: 110px;
+}
+
+.navbar-item-3{
+    margin-right: 100px;
+}
+
+.navbar-item-2{
+    margin-right: 20px;
+}
+
+.content-row-1{
+    height: 580px;
+}
+
+.content-row-2{
+    height: 540px;
+}
+
+.content-row-3{
+    height: 700px;
+}
+
+.title-row-1{
+    /* line-height: 30px; */
+    font-size: 24px;
+    color: #A0A3BD;
+}
+
+.title-row-1-1{
+    font-weight: 600;
+    font-size: 40px;
+    color: #5F2EEA;
+}
+
+.thumbnail-row-1-3{
+    background-image:linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url('../image/thumbnail-row-1-3.png');
+    background-size: cover;
+    background-position: center;
+    width: 100px;
+    height: 357px;
+    margin-top: 0px;
+    border-radius: 10px;
+    box-shadow: 5px 7px 15px rgba(0, 0, 0, 0.3);
+}
+
+.thumbnail-row-1-2{
+    background-image:linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url('../image/thumbnail-row-1-2.png');
+    background-size: cover;
+    background-position: center;
+    width: 100px;
+    height: 357px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 7px 15px rgba(0, 0, 0, 0.3);
+}
+
+.thumbnail-row-1-1{
+    background-image:linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url('../image/thumbnail-row-1-1.png');
+    background-size: cover;
+    background-position: center;
+    width: 100px;
+    height: 357px;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: 5px 7px 15px rgba(0, 0, 0, 0.3);
+}
+
+.font-color-costums {
+    color: #5F2EEA;
+}
+
+.border-showing{
+    width: 100px;
+    border: 2px solid #5F2EEA;
+}
+
+.cover-carousel{
+    width: 223px;
+    height: 308px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+}
+
+.cover-carousel:hover{
+    border: 2px solid #5F2EEA;
+}
+
+.carousel-1 {
+    background-image:url('../image/thumb-film/spiderman.png');
+    background-size: cover;
+    background-position: center;
+    width: 159px; 
+    height: 244px; 
+    border-radius: 8px;
+}
+
+.carousel-2 {
+    background-image:url('../image/thumb-film/lion-king.png');
+    background-size: cover;
+    background-position: center;
+    width: 159px; 
+    height: 244px; 
+    border-radius: 8px;
+}
+
+.carousel-3 {
+    background-image:url('../image/thumb-film/jhon-wick.png');
+    background-size: cover;
+    background-position: center;
+    width: 159px; 
+    height: 244px; 
+    border-radius: 8px;
+}
+
+.btn-month{
+    width: 127px;
+    height: 42px;
+    border: 1.5px solid #5F2EEA;
+}
+.btn-month-active{
+    background-color: #5F2EEA;
+    box-shadow: 0px 0px 25px rgba(95, 46, 234, 0.3);
+}
+
+.cover-upcoming{
+    width: 223px;
+    height: 452px;
+    padding-top: 32px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+}
+
+.upcoming-movie-1{
+    background-image:url('../image/thumb-film/upcoming-movie/upcoming-movie-1.png');
+    background-size: cover;
+    background-position: center;
+    width: 159px; 
+    height: 244px; 
+    border-radius: 8px;
+}
+
+.upcoming-movie-2{
+    background-image:url('../image/thumb-film/upcoming-movie/upcoming-movie-2.png');
+    background-size: cover;
+    background-position: center;
+    width: 159px; 
+    height: 244px; 
+    border-radius: 8px;
+}
+
+.upcoming-movie-3{
+    background-image:url('../image/thumb-film/upcoming-movie/upcoming-movie-3.png');
+    background-size: cover;
+    background-position: center;
+    width: 159px; 
+    height: 244px; 
+    border-radius: 8px;
+}
+
+.main-row-4{
+    height: 372px;
+    width: 1106px;
+}
+
+.sub-title-main-row-4{
+    line-height: 27.5px;
+    font-size: 24px;
+    letter-spacing: 0.1px;
+    color: #4E4B66;
+}
+
+.title-main-row-4{
+    line-height: 10px;
+    font-size: 48px;
+    letter-spacing: 0.1px;
+}
+
+.btn-join-now{
+    width: 120px;
+    height: 53px;
+    background-color: #5F2EEA;
+}
+
+.input-email-join-now{
+    width: 306px;
+    height: 53px;
+    /* border-radius: 8px; */
+}
+
+.input-hover:hover{
+    border: 2px solid #5F2EEA;
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+    .navbar-brand-costum{
+        margin-left: 15px;
+        margin-right: 40px;
+        transition: 0.5s;
+    }
+    .navbar-right{
+        margin: 0px;
+        padding: 15px;
+    }
+    .nav-item-collapse{
+       text-align: center;
+       padding: 15px;
+    }
+    .btn-signup{
+        margin: 0px;
+    }
+    .thumbnail-row-1-3{
+        width: 80px;
+        height: 285.6px;
+        box-shadow: 5px 7px 15px rgba(0, 0, 0, 0.3);
+    }
+    
+    .thumbnail-row-1-2{
+        width: 80px;
+        height: 285.6px;
+        box-shadow: 5px 7px 15px rgba(0, 0, 0, 0.3);
+    }
+    
+    .thumbnail-row-1-1{
+        width: 80px;
+        height: 285.6px;
+        box-shadow: 5px 7px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .cover-carousel{
+        width: 156.1px;
+        height: 215.6px;
+        padding: 0px 20px;
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.4);
+    }
+    .carousel-1 {
+        width: 111.3px; 
+        height: 170.8px;
+    }
+    .carousel-2 {
+        width: 111.3px; 
+        height: 170.8px;
+    }
+    .carousel-3 {
+        width: 111.3px; 
+        height: 170.8px;
+    }
+    .history-show {
+        padding: 15px;
+    }
+    .cover-upcoming{
+        width: 156.1px;
+        height: 380px;
+        padding-top: 22px;
+    }
+    .upcoming-movie-1{
+        width: 111.3px; 
+        height: 170.8px;
+    }
+    .upcoming-movie-2{
+        width: 111.3px; 
+        height: 170.8px;
+    }
+    .upcoming-movie-3{
+        width: 111.3px; 
+        height: 170.8px;
+    }
+    
+    
+    /* .navbar-right-collapse{
+    } */
+}

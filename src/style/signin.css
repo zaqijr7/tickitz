@@ -1,0 +1,199 @@
+body {
+    font-family: Mulish;
+}
+.container-side-right {
+    margin: 0px;
+    padding: 0px;
+}
+.container-timeline {
+    background-image:linear-gradient(rgba(43, 21, 107,0.8), rgba(43, 21, 107, 0.8)), url('../image/background.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding-top: 0px;
+    padding-left: 0px;
+    overflow: auto;
+}
+
+.img-logo {
+    width: 500px;
+    height: 190px;
+    transition: 0.5s;
+}
+
+.title {
+    margin-top: 30px;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: 0.003em;
+    transition: 0.5s;
+}
+
+.paragraph-main {
+    font-family: Mulish;
+    font-size: 24px;
+    line-height: 50px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 20px;
+}
+
+.container-list-timeline {
+    font-family: Mulish;
+    font-size: 24px;
+    line-height: 30px;
+    position: relative;
+    letter-spacing: 0.005em;
+}
+
+.round {
+    height: 50px;
+    width: 50px;
+    margin-right: 30px;
+}
+
+.list-margin {
+    margin-bottom: 30px;
+}
+
+.line-timeline-1 {
+    position: absolute;
+    top: 50px;
+    left: 23px;
+    height: 33px;
+    width: 1px;
+    border: 2px solid white;
+}
+
+.line-timeline-2 {
+    position: absolute;
+    top: 130px;
+    left: 23px;
+    height: 33px;
+    width: 1px;
+    border: 2px solid white;
+}
+
+.list-1{
+    margin-bottom: 30px;
+}
+
+/* .side-signin{
+    height: 100vh;
+    justify-content: center;
+    
+} */
+
+.input-costum{
+    height: 49px;
+    border-radius: 13px;
+}
+
+.checkbox-costum{
+    background-color: #5F2EEA;
+    width: 20px;
+    height: 20px;
+}
+
+.btn-costum-color{
+    background-color: #5F2EEA;
+    color: white;
+}
+
+.btn-sign-with{
+    width: 170px;
+    height: 50px;
+}
+
+.btn-costum{
+    border-radius: 13px;
+
+}
+
+.btn-costum:hover{
+    border: 3px solid #5F2EEA;
+
+}
+
+.input-group-pass{
+    position: relative;
+}
+
+.icon-eye{
+    position: absolute;
+}
+
+.side-signin{
+    margin: auto;
+    /* overflow: auto; */
+}
+
+.text-slogan{
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 48px
+}
+
+@media only screen and (max-width: 1000px) {
+    .img-logo {
+        width: 250px;
+        height: 95px;
+        transition: 0.5s ease-in-out;
+    }
+    .title {
+        font-size: 24px;
+        margin-top: 10px;
+        transition: 0.5s ease;
+    }
+    .paragraph-main {
+        font-size: 18px;
+        margin-top: 14px;
+        line-height: 30px;
+        transition: 0.5s;
+    }
+    .container-list-timeline {
+        font-size: 18px;
+        margin-top: 14px;
+        transition: 0.5s;
+    }
+    .round {
+        height: 35px;
+        width: 35px;
+        margin-right: 20px;
+        transition: 0.5s;
+    }
+    .list-margin {
+        margin-bottom: 35px;
+    }
+    .line-timeline-1 {
+        position: absolute;
+        top: 35px;
+        left: 15px;
+        height: 38px;
+        width: 1px;
+        border: 2px solid white;
+    }
+    
+    .line-timeline-2 {
+        position: absolute;
+        top: 105px;
+        left: 15px;
+        height: 36px;
+        width: 1px;
+        border: 2px solid white;
+    }
+    .side-signin{
+        margin-top: 80px;
+    }
+    
+    .btn-sign-with{
+        width: 150px;
+        height: 40px;
+    }
+    .text-slogan{
+        font-size: 28px;
+        transition: 0.5s;
+    }
+    
+  }

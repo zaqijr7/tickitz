@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script> 
+    <link rel="stylesheet" href="./src/style/payment.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;800&display=swap" rel="stylesheet">
+</head>
+<body class=".bg-theme-body">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container-fluid">
+        <img src="./src/image/logo-navbar.png" alt="" srcset="" class="navbar-brand ms-lg-5 me-lg-3 navbar-brand-costum">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item nav-item-collapse mx-lg-3 navbar-list-1">
+                        <a class="nav-link" aria-current="page" href="#">Movies</a>
+                    </li>
+                    <li class="nav-item nav-item-collapse mx-lg-3 navbar-list-2">
+                        <a class="nav-link" href="#">Cinemas</a>
+                    </li>
+                    <li class="nav-item nav-item-collapse mx-lg-3">
+                        <a class="nav-link" href="#">Buy Ticket</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 navbar-right-collapse">
+                    <li class="nav-item dropdown mx-lg-4 d-flex justify-content-center align-items-center nav-item-collapse">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Location
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item fw-bold" href="#">ID</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item fw-bold" href="#">EN</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item mx-lg-4 d-flex justify-content-center align-items-center nav-item-collapse">
+                        <a class="fas fa-search text-muted text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"></a>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h6 class="modal-title" id="exampleModalLabel">Search</h6>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" placeholder="Search here" aria-label="Recipient's username" aria-describedby="button-addon2">
+                                        <button class="btn btn-search " type="button" id="button-addon2">
+                                        <i class="fas fa-search text-white"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item ms-lg-4 me-lg-5 nav-item-collapse justify-content-md-center justify-content-sm-center">
+                        <img src="./src/image/photo-profile/my-photo.jpg" class="img-thumbnail border-0 rounded-circle" style="width: 50px; height: 50px;" alt="" srcset="">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row mt-4 p-3 px-lg-0">
+            <div class="col-lg-8">
+                <div class="row">
+                    <div class="col">
+                        <p class="fs-5 fw-bold">Payment Info</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col bg-white rounded-3 py-4 px-3">
+                        <div class="row px-2">
+                            <div class="col-6">
+                                <small class="text-start text-muted">Date & time</small>
+                            </div>
+                            <div class="col-6">
+                                <p class="text-end">Tuesday, 07 July 2020 at 02:00pm</p>
+                            </div>
+                            <div class="col-12" style="margin-top: -20px;">
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="row px-2">
+                            <div class="col-6">
+                                <small class="text-start text-muted">Movie title</small>
+                            </div>
+                            <div class="col-6">
+                                <p class="text-end">Spider-Man: Homecoming</p>
+                            </div>
+                            <div class="col-12" style="margin-top: -20px;">
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="row px-2">
+                            <div class="col-6">
+                                <small class="text-start text-muted">Cinema name</small>
+                            </div>
+                            <div class="col-6">
+                                <p class="text-end">CineOne21 Cinema</p>
+                            </div>
+                            <div class="col-12" style="margin-top: -20px;">
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="row px-2">
+                            <div class="col-6">
+                                <small class="text-start text-muted">Number of tickets</small>
+                            </div>
+                            <div class="col-6">
+                                <p class="text-end">3 pieces</p>
+                            </div>
+                            <div class="col-12" style="margin-top: -20px;">
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="row px-2">
+                            <div class="col-6">
+                                <small class="text-start text-muted">Total payment</small>
+                            </div>
+                            <div class="col-6">
+                                <p class="text-end fw-bold fs-5">$30,00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mt-4">
+                        <p class="fs-5 fw-bold">Choose a Payment Method</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col bg-white py-5 px-3 bg-white  rounded-3">
+                        <div class="row justify-content-center">
+                            <button class="btn btn-payment border border-3 mx-2 my-2"> <img src="./src/image/gpay-logo.png" alt="" srcset=""> </button>
+                            <button class="btn btn-payment border border-3 mx-2 my-2"> <img src="./src/image/visa-logo.png" alt="" srcset=""> </button>
+                            <button class="btn btn-payment border border-3 mx-2 my-2"> <img src="./src/image/gopay-logo.png" alt="" srcset=""> </button>
+                            <button class="btn btn-payment border border-3 mx-2 my-2"> <img src="./src/image/paypal-logo.png" alt="" srcset=""> </button>
+                        </div>
+                        <div class="row justify-content-center">
+                            <button class="btn btn-payment border border-3 mx-2 my-2"> <img src="./src/image/dana-logo.png" alt="" srcset=""> </button>
+                            <button class="btn btn-payment border border-3 mx-2 my-2"> <img src="./src/image/bca-logo.png" alt="" srcset=""> </button>
+                            <button class="btn btn-payment border border-3 mx-2 my-2"> <img src="./src/image/bri-logo.png" alt="" srcset=""> </button>
+                            <button class="btn btn-payment border border-3 mx-2 my-2"> <img src="./src/image/ovo-logo.png" alt="" srcset=""> </button>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col pe-0 ps-5"> <hr> </div>
+                            <div class="col-1 p-0 text-center"> <small class="text-muted">Or</small> </div>
+                            <div class="col ps-0 pe-5"> <hr> </div>
+                        </div>  
+                        <div class="row mt-3 text-center">
+                            <p>Pay via cash. <a href="#" class="font-color-costum text-decoration-none">See how it work</a> </p>
+                        </div>                       
+                    </div>
+                </div>
+                <div class="row my-4">
+                    <div class="col-lg d-grid p-0  my-2 mt-lg-3 mb-lg-5">
+                        <a class="btn border-theme fw-bold font-color-costum rounded py-2" href="./ticket.html">Prvious step</a>
+                    </div>
+                    <div class="col-2 d-lg-block d-none"></div>
+                    <div class="col-lg d-grid p-0 my-2 mt-lg-3 mb-lg-5">
+                        <a class="btn bg-theme text-white fw-bold rounded py-2" href="./ticket.html">Pay your order</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 px-4">
+                <div class="row">
+                    <div class="col">
+                        <p class="fs-5 fw-bold">Personal Info</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="card shadow border-0 rounded my-4 my-lg-0">
+                        <div class="card-body py-4 px-2">
+                            <div class="row">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label"> <small class="text-muted">Full Name</small></label>
+                                        <input type="text" class="form-control py-2 text-muted" id="exampleInputEmail1" value="Jonas El Rodriguez">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label"> <small class="text-muted">Email</small></label>
+                                        <input type="email" class="form-control py-2 text-muted" id="exampleInputEmail1" value="jonasrodri123@gmail.com">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label"> <small class="text-muted">Phone Number</small></label>
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text bg-transparent border-end-0 text-muted">+62</span>
+                                            <div class="border my-2"></div>
+                                            <input type="text" class="form-control py-2 border-start-0 text-muted" value="81445687121">
+                                        </div>
+                                    </div>
+                                    <div class="col warning-div py-2 px-3 rounded-3">
+                                        <i class="fas fa-exclamation-triangle me-3" style="color: #F4B740;"></i>
+                                        Fill your data correctly.
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>                    
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row bg-white">
+            <div class="footer-1 py-3 px-lg-5">
+                <div class="col px-5">
+                    <div class="row">
+                        <div class="col-lg-4 p-lg-4 mt-5">
+                            <img src="./src/image/logo-navbar.png" alt="" srcset="">
+                            <p class="text-left text-muted mt-3">Stop waiting in line. Buy tickets <br>
+                                conveniently, watch movies quietly.
+                            </p>
+                        </div>
+                        <div class="col-lg-2 p-lg-4 mt-5">
+                            <h5 class="fw-bolder">Explore</h5>
+                            <ul class="list-unstyled text-muted lh-lg">
+                                <li>Cinemas</li>
+                                <li>Movies List</li>
+                                <li>My Ticket</li>
+                                <li>Notification</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 p-lg-4 mt-5">
+                            <h5 class="fw-bolder">Our Sponsor</h5>
+                            <ul class="list-unstyled text-muted">
+                                <li class="my-3"><img src="./src/image/ebu.id.png" alt="" srcset=""></li>
+                                <li class="my-3"><img src="./src/image/cineone.png" alt="" srcset=""></li>
+                                <li class="my-3"><img src="./src/image/hiflix.png" alt="" srcset=""></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 p-lg-4 mt-5">
+                            <h5 class="fw-bolder">Follow us</h5>
+    
+                            <div class="list my-3">
+                                <div class="d-flex">
+                                    <div class="col-2 d-flex justify-content-center">
+                                        <img src="./src/image/fbicon.png" alt="" srcset="">
+                                    </div>
+                                    <div class="col">
+                                        Tickitz Cinema id
+                                    </div>
+                                </div>
+                                <div class="d-flex my-3">
+                                    <div class="col-2 d-flex justify-content-center">
+                                        <img src="./src/image/igicon.png" alt="" srcset="">
+                                    </div>
+                                    <div class="col">
+                                        tickitz.id
+                                    </div>
+                                </div>
+                                <div class="d-flex my-3">
+                                    <div class="col-2 d-flex justify-content-center">
+                                        <img src="./src/image/twiticon.png" alt="" srcset="">
+                                    </div>
+                                    <div class="col">
+                                        tickitz.id
+                                    </div>
+                                </div>
+                                <div class="d-flex my-3">
+                                    <div class="col-2 d-flex justify-content-center">
+                                        <img src="./src/image/yticon.png" alt="" srcset="">
+                                    </div>
+                                    <div class="col">
+                                        Tickitz Cinema id
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-2 py-3">
+                <p class="text-center text-muted">© 2020 Tickitz. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
